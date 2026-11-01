@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tour El Cielo in Cozumel — (NOMBRE DE TU EMPRESA)</title>
+  <meta name="theme-color" content="#1E5679">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231E5679'/%3E%3Cpath d='M16 6l2.7 6.3 6.8.6-5.2 4.5 1.6 6.7L16 20.4l-5.9 3.7 1.6-6.7-5.2-4.5 6.8-.6z' fill='%23E6D8CC'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=Kaushan+Script&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --green: #1E5679;
+      --green-2: #2F78A8;
+      --green-3: #0B99F0;
+      --sand: #937B6F;
+      --sand-soft: #E6D8CC;
+      --paper: #F1F8FD;
+      --paper-2: #DCEEFA;
+      --white: #fff;
+      --ink: #0E2433;
+      --ink-soft: #4A6173;
+      --ink-faint: #7F93A3;
+      --navy: #10285a;
+      --royal: #3b8fd6;
+      --line: rgba(14, 36, 51, .10);
+      --line-strong: rgba(14, 36, 51, .20);
+      --f-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --f-script: 'Caveat', cursive;
+      --radius-lg: 22px;
+      --ease: cubic-bezier(.22, 1, .36, 1);
+      --shadow-sm: 0 1px 2px rgba(14, 36, 51, .06), 0 2px 6px -2px rgba(14, 36, 51, .06);
+      --shadow-md: 0 18px 40px -18px rgba(14, 36, 51, .28);
+      --shadow-lg: 0 36px 70px -30px rgba(14, 36, 51, .38);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--f-body);
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--green-3);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    @media(max-width:640px) {
+      .container {
+        padding: 0 18px;
+      }
+    }
+
+    section[id] {
+      scroll-margin-top: 76px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    .script {
+      font-family: var(--f-script);
+      font-weight: 700;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--green-3);
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 26px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--sand);
+    }
+
+    .eyebrow.on-dark {
+      color: rgba(255, 255, 255, .85);
+    }
+
+    .btn,
+    .fab {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 24px;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 100px;
+      transition: transform .25s var(--ease), background .25s, border-color .25s;
+      white-space: nowrap;
+      min-height: 46px;
+    }
+
+    .btn svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .btn-blue {
+      background: #0B99F0;
+      color: var(--ink);
+      box-shadow: 0 12px 26px -12px rgba(11, 153, 240, .7);
+    }
+
+    .btn-blue:hover {
+      background: #61B0DF;
+      transform: translateY(-2px);
+    }
+
+    .btn-wa {
+      background: #2F78A8;
+      color: #fff;
+    }
+
+    .btn-wa:hover {
+      background: #0B99F0;
+      transform: translateY(-2px);
+    }
+
+    .btn-navy {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 14px 28px -14px rgba(16, 40, 90, .75);
+    }
+
+    .btn-navy:hover {
+      background: #1d3f7c;
+      transform: translateY(-2px);
+    }
+
+    .btn-line {
+      border: 1.5px solid rgba(255, 255, 255, .5);
+      color: #fff;
+    }
+
+    .btn-line:hover {
+      background: rgba(255, 255, 255, .12);
+      border-color: #fff;
+    }
+
+    .btn-sm {
+      padding: 10px 20px;
+      font-size: 13px;
+      min-height: 40px;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    .cw-ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .45);
+      transform: scale(0);
+      animation: cwRipple .65s ease-out forwards;
+      pointer-events: none;
+    }
+
+    @keyframes cwRipple {
+      to {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes cwPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(47, 120, 168, .55);
+      }
+
+      100% {
+        box-shadow: 0 0 0 18px rgba(47, 120, 168, 0);
+      }
+    }
+
+    /* NAV */
+    header.nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      padding: calc(16px + env(safe-area-inset-top)) 0 16px;
+      color: var(--navy);
+      transition: background .3s, padding .3s var(--ease), box-shadow .3s, color .3s;
+    }
+
+    header.nav.scrolled {
+      background: rgba(255, 255, 255, .95);
+      backdrop-filter: blur(12px);
+      color: var(--ink);
+      padding: calc(10px + env(safe-area-inset-top)) 0 10px;
+      box-shadow: 0 6px 24px -16px rgba(14, 36, 51, .3);
+    }
+
+    header.nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--green);
+      padding: 7px;
+      flex-shrink: 0;
+      color: var(--sand-soft);
+    }
+
+    .logo small {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      opacity: .7;
+      margin-top: 1px;
+    }
+
+    nav.primary {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav.primary a {
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 6px 0;
+      opacity: .92;
+      position: relative;
+    }
+
+    nav.primary a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 2px;
+      background: var(--sand);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .3s var(--ease);
+    }
+
+    nav.primary a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .hamburger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hamburger span,
+    .hamburger span::before,
+    .hamburger span::after {
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+    }
+
+    .hamburger span {
+      position: relative;
+    }
+
+    .hamburger span::before,
+    .hamburger span::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    .hamburger span::before {
+      top: -6px;
+    }
+
+    .hamburger span::after {
+      top: 6px;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media(max-width:860px) {
+
+      nav.primary,
+      .nav-cta .btn {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: var(--green);
+      color: #fff;
+      transform: translateX(100%);
+      visibility: hidden;
+      transition: transform .4s var(--ease), visibility 0s .4s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: calc(32px + env(safe-area-inset-top)) 32px calc(32px + env(safe-area-inset-bottom));
+    }
+
+    .mobile-menu.open {
+      transform: none;
+      visibility: visible;
+      transition: transform .4s var(--ease);
+    }
+
+    .mobile-menu a.mm-link {
+      font-size: 28px;
+      font-weight: 800;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .14);
+    }
+
+    .mobile-menu .btn {
+      margin-top: 26px;
+    }
+
+    .mm-close {
+      position: absolute;
+      top: calc(16px + env(safe-area-inset-top));
+      right: 16px;
+      width: 44px;
+      height: 44px;
+    }
+
+    .mm-close span,
+    .mm-close span::before {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 11px;
+      top: 21px;
+    }
+
+    .mm-close span {
+      transform: rotate(45deg);
+    }
+
+    .mm-close span::before {
+      content: '';
+      left: 0;
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    /* HERO — mobile first (iPhone); escritorio en min-width:861px */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      color: var(--navy);
+      background: linear-gradient(180deg, #cdeefa, #8fd3ee);
+      overflow: hidden;
+      padding: calc(96px + env(safe-area-inset-top)) 0 112px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 62% 50%;
+    }
+
+    .hero-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(241, 248, 253, .82) 0%, rgba(241, 248, 253, .6) 45%, rgba(241, 248, 253, .06) 82%);
+    }
+
+    .hero-waves {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 84px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero .container,
+    header.nav .container {
+      max-width: 1500px;
+      padding-left: clamp(20px, 4.5vw, 80px);
+      padding-right: clamp(20px, 4.5vw, 80px);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 12.4vw, 64px);
+      letter-spacing: -.03em;
+      line-height: 1;
+      color: var(--navy);
+    }
+
+    .hero h1 .l2 {
+      display: flex;
+      align-items: flex-end;
+      gap: .16em;
+      flex-wrap: wrap;
+      margin-top: .04em;
+    }
+
+    .hero h1 .cz {
+      font-family: 'Kaushan Script', cursive;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: var(--royal);
+      font-size: 1.2em;
+      line-height: 1;
+      position: relative;
+      padding-bottom: .14em;
+    }
+
+    .hero h1 .cz::after {
+      content: '';
+      position: absolute;
+      left: 4%;
+      right: 0;
+      bottom: 0;
+      height: .08em;
+      border-radius: 50%;
+      background: #F2B632;
+      transform: rotate(-1.5deg);
+    }
+
+    .hero p.sub {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-top: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero .hero-actions .btn {
+      width: 100%;
+    }
+
+    .hero .btn {
+      font-size: 16px;
+      padding: 15px 26px;
+      min-height: 54px;
+      gap: 12px;
+    }
+
+    .hero .btn svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .feat {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 26px;
+      max-width: 700px;
+      padding: 14px 2px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .55);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 40px -24px rgba(16, 40, 90, .35);
+    }
+
+    .feat div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 11.5px;
+      line-height: 1.25;
+      padding: 2px 4px;
+    }
+
+    .feat div+div {
+      border-left: 2px solid rgba(16, 40, 90, .5);
+    }
+
+    .feat svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media(min-width:641px) {
+      .hero-waves {
+        height: 120px;
+      }
+
+      .hero .hero-actions .btn {
+        width: auto;
+      }
+    }
+
+    @media(min-width:861px) {
+      .hero {
+        min-height: min(820px, 100svh);
+        align-items: center;
+        padding: 130px 0 150px;
+      }
+
+      .hero-scrim {
+        background: linear-gradient(180deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 20%), linear-gradient(90deg, rgba(241, 248, 253, .82) 0%, rgba(241, 248, 253, .5) 35%, rgba(241, 248, 253, 0) 68%);
+      }
+
+      .hero h1 {
+        font-size: clamp(52px, 6vw, 78px);
+      }
+
+      .hero p.sub {
+        font-size: clamp(18px, 1.8vw, 22px);
+        margin-top: 20px;
+      }
+
+      .hero-actions {
+        margin-top: 30px;
+      }
+
+      .hero .btn {
+        font-size: 15px;
+        padding: 14px 28px;
+        min-height: 52px;
+      }
+
+      .feat {
+        margin-top: 38px;
+        padding: 16px 6px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, .52);
+      }
+
+      .feat div {
+        gap: 10px;
+        font-size: 13.5px;
+        padding: 4px 10px;
+      }
+
+      .feat svg {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    /* SECCIONES */
+    .section {
+      padding: 92px 0;
+    }
+
+    @media(max-width:720px) {
+      .section {
+        padding: 62px 0;
+      }
+    }
+
+    .head {
+      max-width: 620px;
+      margin-bottom: 44px;
+    }
+
+    .head h2 {
+      font-size: clamp(28px, 4.2vw, 42px);
+      margin: 14px 0 12px;
+    }
+
+    .head p {
+      color: var(--ink-soft);
+      font-size: 15.5px;
+    }
+
+    .head.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* El Cielo */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    @media(max-width:900px) {
+      .about {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+    }
+
+    .polaroid-stack {
+      position: relative;
+      height: 440px;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .polaroid {
+      position: absolute;
+      background: var(--white);
+      padding: 12px 12px 46px;
+      border-radius: 6px;
+      box-shadow: 0 24px 40px -18px rgba(14, 36, 51, .5);
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+      background: var(--paper-2);
+    }
+
+    .polaroid figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      text-align: center;
+      font-family: var(--f-script);
+      font-weight: 700;
+      font-size: 26px;
+      color: var(--green);
+      line-height: 1.2;
+    }
+
+    .polaroid.p1 {
+      width: 300px;
+      height: 350px;
+      left: 0;
+      top: 10px;
+      transform: rotate(-5deg);
+      z-index: 1;
+    }
+
+    .polaroid.p2 {
+      width: 210px;
+      height: 255px;
+      right: 0;
+      top: 170px;
+      transform: rotate(7deg);
+      z-index: 2;
+    }
+
+    .starfish {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      width: 62px;
+      color: var(--sand);
+      transform: rotate(14deg);
+      z-index: 3;
+    }
+
+    @media(max-width:420px) {
+      .polaroid.p1 {
+        width: 240px;
+        height: 290px;
+      }
+
+      .polaroid.p2 {
+        width: 170px;
+        height: 210px;
+      }
+    }
+
+    .about h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 14px 0 16px;
+    }
+
+    .about p.lead {
+      color: var(--ink-soft);
+      font-size: 15.5px;
+      margin-bottom: 12px;
+    }
+
+    .facts {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .fact {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fact .ic {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--paper-2);
+      color: var(--green-3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .fact .ic svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .fact b {
+      display: block;
+      font-size: 14px;
+    }
+
+    .fact span {
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    /* ondas */
+    .wave-sec {
+      position: relative;
+      background: var(--green);
+      color: #fff;
+    }
+
+    .wave {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      pointer-events: none;
+    }
+
+    .wave.top {
+      top: -1px;
+    }
+
+    .wave.bottom {
+      bottom: -1px;
+    }
+
+    @media(max-width:720px) {
+      .wave {
+        height: 34px;
+      }
+    }
+
+    /* Recorrido */
+    .route {
+      padding: 130px 0 124px;
+    }
+
+    .route .head p {
+      color: rgba(255, 255, 255, .78);
+    }
+
+    .stops {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .stops::before {
+      content: '';
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      top: 30px;
+      border-top: 2.5px dashed rgba(230, 216, 204, .55);
+    }
+
+    .stop {
+      position: relative;
+      text-align: center;
+      padding: 0 6px;
+    }
+
+    .stop .dot {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      background: var(--green-2);
+      border: 3px solid var(--sand-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--f-script);
+      font-weight: 700;
+      font-size: 28px;
+      position: relative;
+    }
+
+    .stop.main .dot {
+      background: #0B99F0;
+      color: var(--ink);
+      box-shadow: 0 0 0 8px rgba(11, 153, 240, .25);
+    }
+
+    .stop h3 {
+      font-size: 18px;
+    }
+
+    .stop p {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, .72);
+      margin-top: 6px;
+    }
+
+    .route-note {
+      margin-top: 34px;
+      text-align: center;
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, .7);
+    }
+
+    @media(max-width:760px) {
+      .stops {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .stops::before {
+        left: 30px;
+        right: auto;
+        top: 30px;
+        bottom: 30px;
+        border-top: none;
+        border-left: 2.5px dashed rgba(230, 216, 204, .55);
+      }
+
+      .stop {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 16px;
+        align-items: center;
+        padding: 0;
+      }
+
+      .stop .dot {
+        margin: 0;
+      }
+    }
+
+    /* La lancha */
+    .boat {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    @media(max-width:900px) {
+      .boat {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+    }
+
+    .boat-photo {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/4.4;
+      background: var(--paper-2);
+      box-shadow: var(--shadow-md);
+    }
+
+    .boat-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .boat-photo .tag {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      background: var(--sand-soft);
+      color: var(--green);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 8px 14px;
+      border-radius: 100px;
+    }
+
+    .boat h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 14px 0 14px;
+    }
+
+    .boat p.lead {
+      color: var(--ink-soft);
+      font-size: 15.5px;
+    }
+
+    .boat p.lead+p.lead {
+      margin-top: 12px;
+    }
+
+    .incl {
+      margin-top: 24px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .incl li {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 600;
+      background: var(--white);
+      padding: 13px 16px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .incl svg {
+      width: 20px;
+      height: 20px;
+      color: #0B99F0;
+      flex-shrink: 0;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .incl-note {
+      font-size: 12.5px;
+      color: var(--ink-faint);
+      margin-top: 12px;
+    }
+
+    /* Galería */
+    .gal {
+      background: var(--paper-2);
+      overflow: hidden;
+    }
+
+    .gal-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 34px 26px;
+      padding: 10px 0 20px;
+    }
+
+    .gal-item {
+      background: var(--white);
+      padding: 10px 10px 42px;
+      border-radius: 6px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      width: min(100%, 240px);
+      transition: transform .4s var(--ease);
+    }
+
+    .gal-item:nth-child(1) {
+      transform: rotate(-3deg);
+    }
+
+    .gal-item:nth-child(2) {
+      transform: rotate(2.5deg) translateY(18px);
+    }
+
+    .gal-item:nth-child(3) {
+      transform: rotate(-1.5deg);
+    }
+
+    .gal-item:nth-child(4) {
+      transform: rotate(3deg) translateY(14px);
+    }
+
+    .gal-item:nth-child(5) {
+      transform: rotate(-2.5deg);
+    }
+
+    @media(hover:hover) {
+      .gal-item:hover {
+        transform: rotate(0) scale(1.05) !important;
+        z-index: 3;
+      }
+    }
+
+    .gal-item .ph {
+      aspect-ratio: 1/1.05;
+      overflow: hidden;
+      border-radius: 2px;
+      background: var(--paper-2);
+    }
+
+    .gal-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gal-item figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      text-align: center;
+      font-family: var(--f-script);
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--green);
+      line-height: 1.2;
+    }
+
+    /* Cómo reservar + form */
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    @media(max-width:900px) {
+      .book-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+    }
+
+    .steps {
+      display: grid;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .step .n {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--sand-soft);
+      font-family: var(--f-script);
+      font-weight: 700;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step b {
+      display: block;
+      font-size: 16px;
+    }
+
+    .step span {
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+
+    .contact-cards {
+      margin-top: 28px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .info-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .info-card .ic {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--paper-2);
+      color: var(--green-3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-card .ic svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .info-card h4 {
+      font-size: 13.5px;
+    }
+
+    .info-card p,
+    .info-card a {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+    }
+
+    .form-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-card h3 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .form-card>p {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .field>label,
+    .field>.lbl {
+      font-size: 12.5px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field textarea {
+      padding: 13px 15px;
+      border-radius: 12px;
+      border: 1.5px solid var(--line-strong);
+      font-family: inherit;
+      font-size: 16px;
+      background: var(--white);
+      width: 100%;
+      min-height: 48px;
+      color: var(--ink);
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 84px;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--green-3);
+      box-shadow: 0 0 0 4px rgba(11, 153, 240, .14);
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media(max-width:520px) {
+      .field-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .stepper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1.5px solid var(--line-strong);
+      border-radius: 12px;
+      padding: 5px 5px 5px 16px;
+      min-height: 48px;
+    }
+
+    .stepper b {
+      font-size: 15px;
+    }
+
+    .stepper-group {
+      display: flex;
+      gap: 5px;
+    }
+
+    .stepper-group button {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      background: var(--paper-2);
+      font-weight: 800;
+      font-size: 17px;
+      transition: background .2s;
+    }
+
+    .stepper-group button:hover {
+      background: var(--sand-soft);
+    }
+
+    .err {
+      color: #C0392B;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* FAQ */
+    .faq {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .faq-q {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 2px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 16px;
+      min-height: 54px;
+    }
+
+    .faq-q svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      color: var(--green-3);
+      transition: transform .3s;
+    }
+
+    .faq-item.open .faq-q svg {
+      transform: rotate(45deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s var(--ease);
+    }
+
+    .faq-a p {
+      padding: 0 2px 18px;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    /* CTA final */
+    .final {
+      text-align: center;
+      padding: 124px 0 126px;
+    }
+
+    .final h2 {
+      font-size: clamp(30px, 5vw, 52px);
+      margin: 14px 0 14px;
+    }
+
+    .final .hand {
+      font-size: 30px;
+      color: var(--sand-soft);
+      display: block;
+    }
+
+    .final p {
+      color: rgba(255, 255, 255, .8);
+      max-width: 480px;
+      margin: 0 auto 28px;
+    }
+
+    .final .hero-actions {
+      justify-content: center;
+    }
+
+    /* Barra móvil */
+    .mobile-action-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 150;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--line);
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    }
+
+    .fab {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #2F78A8;
+    }
+
+    .fab svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media(prefers-reduced-motion:no-preference) {
+      .fab {
+        animation: cwPulse 2.4s ease-out infinite;
+      }
+    }
+
+    .mobile-action-bar .btn {
+      flex: 1;
+    }
+
+    @media(min-width:861px) {
+      .mobile-action-bar {
+        display: none;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background: var(--green);
+      color: rgba(255, 255, 255, .72);
+      padding: 104px 0 100px;
+      position: relative;
+    }
+
+    @media(min-width:861px) {
+      footer {
+        padding-bottom: 30px;
+      }
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1.2fr;
+      gap: 34px;
+      margin-bottom: 34px;
+    }
+
+    @media(max-width:760px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer .logo {
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    footer .logo-mark {
+      background: rgba(255, 255, 255, .14);
+    }
+
+    footer p.f-desc {
+      font-size: 13.5px;
+      max-width: 300px;
+    }
+
+    footer h4 {
+      font-size: 13.5px;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    footer li {
+      margin-bottom: 10px;
+      font-size: 13.5px;
+    }
+
+    footer a:hover {
+      color: var(--sand-soft);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    @media(min-width:700px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-bottom a {
+      color: rgba(255, 255, 255, .78);
+      font-weight: 700;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: calc(92px + env(safe-area-inset-bottom));
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--ink);
+      color: #fff;
+      padding: 13px 22px;
+      border-radius: 100px;
+      font-size: 13.5px;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .35s var(--ease);
+      z-index: 400;
+      max-width: 90vw;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media(min-width:861px) {
+      .toast {
+        bottom: 30px;
+      }
+    }
+
+    @media(prefers-reduced-motion:no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: opacity .8s var(--ease), transform .8s var(--ease);
+      }
+
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media(max-width:560px) {
+      .gal-board {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 26px 14px;
+      }
+
+      .gal-item {
+        width: 100%;
+        padding: 8px 8px 34px;
+      }
+
+      .gal-item:nth-child(5) {
+        grid-column: 1/-1;
+        width: calc(50% - 7px);
+      }
+
+      .gal-item figcaption {
+        font-size: 19px;
+        bottom: 6px;
+      }
+
+      .final .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .final .hero-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media(max-width:480px) {
+      .logo {
+        font-size: 15px;
+      }
+
+      .logo small {
+        font-size: 9px;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="st" viewBox="0 0 24 24">
+      <path d="M12 2l2.7 6.3 6.8.6-5.2 4.5 1.6 6.7L12 16.4 6.1 20.1l1.6-6.7L2.5 8.9l6.8-.6z" />
+    </symbol>
+    <symbol id="wa" viewBox="0 0 24 24">
+      <path
+        d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.33 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2z" />
+    </symbol>
+  </svg>
+
+  <a href="#inicio" class="sr-only">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="container">
+      <a href="#inicio" class="logo" aria-label="(NOMBRE DE TU EMPRESA), home">
+        <svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <use href="#st" />
+        </svg>
+        <span>(NOMBRE DE TU EMPRESA)<small>Cozumel · El Cielo</small></span>
+      </a>
+      <nav class="primary" aria-label="Main">
+        <a href="#el-cielo">El Cielo</a>
+        <a href="#lancha">Captain</a>
+        <a href="#recorrido">Journey</a>
+        <a href="#galeria">Photos</a>
+        <a href="#preguntas">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a data-wa class="btn btn-wa btn-sm" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobileMenu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><span></span></button>
+    <a class="mm-link" href="#el-cielo">El Cielo</a>
+    <a class="mm-link" href="#lancha">Captain</a>
+    <a class="mm-link" href="#recorrido">Journey</a>
+    <a class="mm-link" href="#galeria">Photos</a>
+    <a class="mm-link" href="#reservar">Book</a>
+    <a data-wa class="btn btn-wa btn-block" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-bg" src="hero.png" alt="Boat cruising through Cozumel's turquoise waters" fetchpriority="high"
+        onerror="this.style.display='none'">
+      <div class="hero-scrim"></div>
+      <div class="container">
+        <div class="hero-copy">
+          <h1>Tour El Cielo<span class="l2"><span>in</span><span class="cz">Cozumel</span></span></h1>
+          <p class="sub">Crystal clear waters, unforgettable moments.</p>
+          <div class="hero-actions">
+            <a data-wa data-msg="reservar" class="btn btn-navy" href="#" target="_blank" rel="noopener"><svg
+                viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 21h40l-5 7H10zM13 21l3-8h14l5 8M20 13l2-5h6" />
+              </svg>Book Your Tour&nbsp;&rsaquo;</a>
+          </div>
+          <div class="feat">
+            <div><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M6 20c0-4 3-6 8-6h14c5 0 8 2 8 6v4c0 5-4 8-8 8h-3l-3-4h-4l-3 4h-1c-5 0-8-3-8-8zM36 14V6a3 3 0 0 1 6 0v22" />
+              </svg>Snorkeling<br>Tours</div>
+            <div><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 28h40l-5 8H9zM12 28l3-9h16l6 9M20 19l2-6h6" />
+              </svg>Private &amp; Group<br>Tours</div>
+            <div><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round">
+                <path d="M24 5l5.5 12.5 13.5 1.2-10.2 9 3.1 13.3L24 33.8 12.1 41l3.1-13.3L5 18.7l13.5-1.2z" />
+              </svg>Top Rated<br>Service</div>
+            <div><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M24 44V20M24 20c-2-8-9-11-16-9 6 0 10 3 11 9M24 20c2-8 9-11 16-9-6 0-10 3-11 9M24 20c-6-3-12 0-14 6 5-3 10-3 14-1M24 20c6-3 12 0 14 6-5-3-10-3-14-1" />
+              </svg>Unforgettable<br>Cozumel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="el-cielo">
+      <div class="container about">
+        <div class="polaroid-stack reveal" aria-hidden="true">
+          <figure class="polaroid p2"><img src="smile.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <figcaption>aboard</figcaption>
+          </figure>
+          <figure class="polaroid p1"><img src="galeria.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <figcaption>El Cielo</figcaption>
+          </figure>
+          <svg class="starfish" viewBox="0 0 24 24" fill="currentColor">
+            <use href="#st" />
+          </svg>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">The destination</span>
+          <h2>There's a Reason It's Called El Cielo</h2>
+          <p class="lead">El Cielo means "Heaven" in Spanish, and once you see its beautiful turquoise waters, you'll
+            understand why.</p>
+          <p class="lead">It's one of those places where you just want to jump into the water, relax, and enjoy the
+            moment. And I'd love to take you there.</p>
+          <div class="facts">
+            <div class="fact">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round">
+                  <path
+                    d="M3 17c1.8 1.6 3.6 1.6 5.4 0s3.6-1.6 5.4 0 3.6 1.6 5.4 0M3 11c1.8 1.6 3.6 1.6 5.4 0s3.6-1.6 5.4 0 3.6 1.6 5.4 0" />
+                </svg></div>
+              <div><b>Crystal-clear water</b><span>Beautiful turquoise water, famous off Cozumel's coast.</span></div>
+            </div>
+            <div class="fact">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 14c1 1.4 2.4 2 4 2s3-.6 4-2M9 9.5h.01M15 9.5h.01" />
+                </svg></div>
+              <div><b>Soft sandy bottom</b><span>A peaceful sandbar, calm from the moment you arrive.</span></div>
+            </div>
+            <div class="fact">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <use href="#st" />
+                </svg></div>
+              <div><b>Starfish</b><span>Resting in their natural habitat.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lancha" style="padding-top:20px;">
+      <div class="container boat">
+        <div class="boat-photo reveal"><img src="dron.png" alt="Our boat cruising near Cozumel" loading="lazy"
+            onerror="this.style.display='none'"><span class="tag">Departing from Cozumel</span></div>
+        <div class="reveal">
+          <span class="eyebrow">Your local guide</span>
+          <h2>You're Not Just Booking a Boat. You're Coming Out on the Water With Us.</h2>
+          <p class="lead">I'm your captain, and Cozumel's waters are my playground. I know these waters, their beautiful
+            spots, and the places that make a day at sea special.</p>
+          <p class="lead">My goal is simple: make sure you feel welcome, enjoy the ride, and experience the best of what
+            Cozumel has to offer.</p>
+          <p class="lead">Bring your friends, your family, or that special someone. I'll take care of the boat and help
+            you enjoy the journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wave-sec route" id="recorrido">
+      <svg class="wave top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 H1440 V22 C1200,62 960,0 720,28 C480,56 240,6 0,34 Z" fill="#F1F8FD" />
+      </svg>
+      <div class="container">
+        <div class="head center reveal">
+          <span class="eyebrow on-dark">The journey</span>
+          <h2>The Best Part? The Journey Is Just as Beautiful as the Destination.</h2>
+          <p>Depending on the selected route, weather, and sea conditions, your experience may include:</p>
+        </div>
+        <div class="stops reveal">
+          <div class="stop">
+            <div class="dot">1</div>
+            <div>
+              <h3>Palancar Reef</h3>
+              <p>Discover Cozumel's underwater world, surrounded by tropical fish and coral formations.</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="dot">2</div>
+            <div>
+              <h3>Colombia Reef</h3>
+              <p>Another spectacular snorkeling area with clear Caribbean waters and abundant marine life.</p>
+            </div>
+          </div>
+          <div class="stop main">
+            <div class="dot">★</div>
+            <div>
+              <h3>El Cielo</h3>
+              <p>Swim in shallow turquoise waters and enjoy the peaceful atmosphere of this iconic destination.</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="dot">4</div>
+            <div>
+              <h3>El Cielito</h3>
+              <p>Relax in beautiful, shallow waters and enjoy the natural scenery of the Caribbean.</p>
+            </div>
+          </div>
+        </div>
+        <p class="route-note">Every day at sea is a little different. That's part of the adventure.</p>
+      </div>
+      <svg class="wave bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,60 H1440 V30 C1200,-6 960,52 720,24 C480,-4 240,50 0,22 Z" fill="#F1F8FD" />
+      </svg>
+    </section>
+
+    <section class="section" id="incluye">
+      <div class="container boat">
+        <div class="boat-photo reveal"><img src="smile.png" alt="Guests relaxing aboard with cold drinks" loading="lazy"
+            onerror="this.style.display='none'"><span class="tag">Cold drinks &amp; snacks</span></div>
+        <div class="reveal">
+          <span class="eyebrow">What's included</span>
+          <h2>Everything Is Ready. All You Have to Do Is Come Aboard.</h2>
+          <p class="lead">Good company, cold drinks and snacks. What more do you need? Your boat excursion includes:</p>
+          <ul class="incl">
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Boat transportation throughout the excursion</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Experienced captain</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Snorkeling equipment</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Cold bottled water</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Soft drinks</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Snacks</li>
+            <li><svg viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>Time to swim, snorkel, and enjoy the Caribbean</li>
+          </ul>
+          <p class="incl-note">Just bring your swimsuit, sunscreen, and a good mood. I'll take care of the rest.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gal" id="galeria">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="eyebrow">Photos</span>
+          <h2>This is what a day at El Cielo looks like.</h2>
+        </div>
+        <div class="gal-board reveal">
+          <figure class="gal-item">
+            <div class="ph"><img src="galeria.png" alt="Crystal-clear water in Cozumel" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <figcaption>crystal clear</figcaption>
+          </figure>
+          <figure class="gal-item">
+            <div class="ph"><img src="dron.png" alt="Aerial view of the boat" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <figcaption>from above</figcaption>
+          </figure>
+          <figure class="gal-item">
+            <div class="ph"><img src="sunset.png" alt="Sunset over the sea" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <figcaption>the real heaven</figcaption>
+          </figure>
+          <figure class="gal-item">
+            <div class="ph"><img src="smile.png" alt="Guests smiling aboard" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <figcaption>aboard</figcaption>
+          </figure>
+          <figure class="gal-item">
+            <div class="ph"><img src="hero.png" alt="Boat in turquoise waters" loading="lazy"
+                onerror="this.style.display='none'"></div>
+            <figcaption>heading to El Cielo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reservar">
+      <div class="container book-grid">
+        <div class="reveal">
+          <span class="eyebrow">Book</span>
+          <div class="head" style="margin-bottom:26px;">
+            <h2>Booking is easy: just message us.</h2>
+            <p>We book directly, no middlemen. We'll confirm availability, departure point and duration over WhatsApp.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="n">1</div>
+              <div><b>Message us</b><span>Tell us the date and how many people.</span></div>
+            </div>
+            <div class="step">
+              <div class="n">2</div>
+              <div><b>We confirm</b><span>Availability, price and departure details.</span></div>
+            </div>
+            <div class="step">
+              <div class="n">3</div>
+              <div><b>Come aboard</b><span>Bring your swimsuit, towel and a good mood.</span></div>
+            </div>
+          </div>
+          <div class="contact-cards">
+            <div class="info-card">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <use href="#wa" />
+                </svg></div>
+              <div>
+                <h4>WhatsApp</h4><a data-wa data-text="telefono" href="#" target="_blank" rel="noopener"></a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg></div>
+              <div>
+                <h4>Hours</h4>
+                <p>Every day, 7:00 AM – 7:00 PM</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg></div>
+              <div>
+                <h4>Departure</h4>
+                <p>Cozumel, Quintana Roo (exact spot via WhatsApp)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <form class="form-card" id="bookForm" novalidate>
+            <h3>Request your spot</h3>
+            <p>When you send it, WhatsApp opens with your request ready.</p>
+            <div class="field-row">
+              <div class="field"><label for="fDate">Tentative date</label><input id="fDate" type="date"></div>
+              <div class="field">
+                <span class="lbl" id="pLbl">People</span>
+                <div class="stepper" role="group" aria-labelledby="pLbl">
+                  <b id="people" aria-live="polite">2</b>
+                  <div class="stepper-group">
+                    <button type="button" data-step="-1" aria-label="Fewer people">−</button>
+                    <button type="button" data-step="1" aria-label="More people">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field"><label for="fName">Name</label><input id="fName" type="text" autocomplete="name"
+                placeholder="Your name" required><span class="err" id="errName" role="alert"></span></div>
+            <div class="field"><label for="fMsg">Message (optional)</label><textarea id="fMsg"
+                placeholder="Anything we should know?"></textarea></div>
+            <button type="submit" class="btn btn-wa btn-block"><svg viewBox="0 0 24 24" fill="currentColor">
+                <use href="#wa" />
+              </svg>Send via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas" style="padding-top:20px;">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>What almost everyone asks.</h2>
+        </div>
+        <div class="faq reveal" id="faq">
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">What should I bring?<svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg></button>
+            <div class="faq-a">
+              <p>Swimsuit, towel, biodegradable sunscreen and a good mood.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we touch the starfish?<svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg></button>
+            <div class="faq-a">
+              <p>We look without taking them out of the water or bothering them, so they stay safe and everyone can keep
+                enjoying them.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">How long is the tour and where does it leave
+              from?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg></button>
+            <div class="faq-a">
+              <p>We confirm duration and departure point over WhatsApp when you book.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does it cost?<svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg></button>
+            <div class="faq-a">
+              <p>Message us with the date and number of people and we'll quote you right away.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">What if the sea is rough?<svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg></button>
+            <div class="faq-a">
+              <p>Stops depend on sea conditions. We'll let you know and adjust the route.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wave-sec final">
+      <svg class="wave top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 H1440 V28 C1200,-4 960,56 720,26 C480,-4 240,52 0,24 Z" fill="#F1F8FD" />
+      </svg>
+      <div class="container reveal">
+        <span class="hand script">I'd be happy to have you aboard.</span>
+        <h2>The Caribbean Is Calling. Are You Coming?</h2>
+        <p>There's nothing quite like spending a day on Cozumel's beautiful waters. Let's leave the shore behind,
+          explore amazing places, enjoy some snorkeling, and make our way to El Cielo.</p>
+        <div class="hero-actions">
+          <a data-wa data-msg="reservar" class="btn btn-wa" href="#" target="_blank" rel="noopener">Message the
+            Captain</a>
+          <a href="#reservar" class="btn btn-blue">Book Your Boat Tour</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="mobile-action-bar">
+      <a data-wa data-msg="reservar" class="fab" aria-label="WhatsApp" href="#" target="_blank" rel="noopener"><svg
+          viewBox="0 0 24 24" fill="currentColor">
+          <use href="#wa" />
+        </svg></a>
+      <a href="#reservar" class="btn btn-blue">Book your El Cielo tour</a>
+    </div>
+  </main>
+
+  <footer>
+    <svg class="wave top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 H1440 V26 C1200,60 960,2 720,30 C480,58 240,4 0,30 Z" fill="#F1F8FD" />
+    </svg>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#inicio" class="logo"><svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <use href="#st" />
+            </svg><span>(NOMBRE DE TU EMPRESA)</span></a>
+          <p class="f-desc">Boat tour to El Cielo, Cozumel. Direct service, small groups and local people.</p>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#el-cielo">El Cielo</a></li>
+            <li><a href="#recorrido">Journey</a></li>
+            <li><a href="#lancha">Captain</a></li>
+            <li><a href="#reservar">Book</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-tel data-text="telefono" href="#"></a></li>
+            <li><a data-mail href="#"></a></li>
+            <li>Cozumel, Q.R., Mexico</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 (NOMBRE DE TU EMPRESA). All rights reserved.</span>
+        <span>Powered by <a href="https://aclsys.net/servicios" target="_blank" rel="noopener">ACLSYS</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* CONFIGURACIÓN — cambia aquí los datos reales */
+    const CONFIG = {
+      brand: '(NOMBRE DE TU EMPRESA)',
+      phoneDisplay: '+52 1 987 000 0000',
+      phoneDigits: '5219870000000',
+      email: 'hola@caribbeantoursagency.mx'
+    };
+    const $ = (s, r = document) => r.querySelector(s);
+    const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+    const waLink = t => 'https://wa.me/' + CONFIG.phoneDigits + (t ? '?text=' + encodeURIComponent(t) : '');
+    $$('[data-tel]').forEach(a => { a.href = 'tel:+' + CONFIG.phoneDigits; if (a.dataset.text) a.textContent = CONFIG.phoneDisplay; });
+    $$('[data-wa]').forEach(a => { a.href = waLink(a.dataset.msg ? "Hi, I'd like to book the El Cielo boat tour in Cozumel. Is there availability?" : "Hi, I'd like some info about the El Cielo boat tour."); if (a.dataset.text) a.textContent = CONFIG.phoneDisplay; });
+    $$('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; a.textContent = CONFIG.email; });
+
+    /* toast */
+    let tt; function toast(m) { const el = $('#toast'); el.textContent = m; el.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => el.classList.remove('show'), 3600); }
+
+    /* personas + fecha */
+    let people = 2;
+    const todayISO = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    $('#fDate').min = todayISO;
+    $$('[data-step]').forEach(b => b.addEventListener('click', () => { people = Math.max(1, Math.min(20, people + Number(b.dataset.step))); $('#people').textContent = people; }));
+
+    /* formulario → WhatsApp */
+    $('#bookForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = $('#fName').value.trim();
+      $('#errName').textContent = name ? '' : 'Please enter your name.';
+      if (!name) { $('#fName').focus(); return; }
+      const lines = ["Hi, I'd like to book the El Cielo boat tour in Cozumel:", '• Tentative date: ' + ($('#fDate').value || 'to be decided'), '• People: ' + people, '• Name: ' + name];
+      const msg = $('#fMsg').value.trim(); if (msg) lines.push('• Message: ' + msg);
+      const w = window.open(waLink(lines.join('\n')), '_blank', 'noopener');
+      toast(w ? 'Opening WhatsApp with your request…' : 'Your browser blocked the window. Allow pop-ups and try again.');
+    });
+
+    /* FAQ */
+    $$('.faq-item').forEach(item => {
+      const q = $('.faq-q', item), a = $('.faq-a', item);
+      q.addEventListener('click', () => {
+        const open = item.classList.contains('open');
+        $$('.faq-item.open').forEach(o => { o.classList.remove('open'); $('.faq-q', o).setAttribute('aria-expanded', 'false'); $('.faq-a', o).style.maxHeight = null; });
+        if (!open) { item.classList.add('open'); q.setAttribute('aria-expanded', 'true'); a.style.maxHeight = a.scrollHeight + 'px'; }
+      });
+    });
+
+    /* nav + menú móvil */
+    const nav = $('#nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    const menu = $('#mobileMenu'), burger = $('#hamburger');
+    const closeMenu = () => { menu.classList.remove('open'); menu.setAttribute('aria-hidden', 'true'); burger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; };
+    burger.addEventListener('click', () => { menu.classList.add('open'); menu.setAttribute('aria-hidden', 'false'); burger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; $('#mmClose').focus(); });
+    $('#mmClose').addEventListener('click', closeMenu);
+    $$('#mobileMenu a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    /* revelado */
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { threshold: .12 });
+      $$('.reveal').forEach(el => io.observe(el));
+    } else { $$('.reveal').forEach(el => el.classList.add('in')); }
+  </script>
+  <script src="waves.js" defer></script>
+</body>
+
+</html>
